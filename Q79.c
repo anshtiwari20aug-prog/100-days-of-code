@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+int r,c,a[50][50];scanf("%d%d",&r,&c);for(int i=0;i<r;i++)for(int j=0;j<c;j++)scanf("%d",&a[i][j]);for(int s=0;s<r+c-1;s++){for(int i=0;i<r;i++){int j=s-i;if(j>=0&&j<c)printf("%d ",a[i][j]);}}puts("");
+return 0;
+}
